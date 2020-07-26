@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\User\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add styled-components styled-icons
+  C:\Program Files\nodejs\node.exe C:\Users\User\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add styled-icons
 
 PATH: 
   C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\User\bin;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\QuickTime\QTSystem;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\nodejs;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Users\User\AppData\Local\Microsoft\WindowsApps;C:\Users\User\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\User\AppData\Roaming\npm
@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@styled-icons/fa-solid/-/fa-solid-10.10.0.tgz: ESOCKETTIMEDOUT
+  Error: https://registry.yarnpkg.com/@styled-icons/material-outlined/-/material-outlined-10.7.0.tgz: ESOCKETTIMEDOUT
       at ClientRequest.<anonymous> (C:\Users\User\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141375:19)
       at Object.onceWrapper (events.js:312:28)
       at ClientRequest.emit (events.js:223:5)
@@ -41,6 +41,7 @@ npm manifest:
       "react": "^16.13.1",
       "react-dom": "^16.13.1",
       "react-scripts": "3.4.1",
+      "react-sticky-box": "^0.9.3",
       "styled-components": "^5.1.1",
       "typescript": "~3.7.2"
     },
@@ -64,6 +65,9 @@ npm manifest:
         "last 1 firefox version",
         "last 1 safari version"
       ]
+    },
+    "devDependencies": {
+      "@types/styled-components": "^5.1.1"
     }
   }
 
@@ -1091,7 +1095,7 @@ Lockfile:
     dependencies:
       regenerator-runtime "^0.13.4"
   
-  "@babel/runtime@^7.10.2", "@babel/runtime@^7.10.3", "@babel/runtime@^7.5.1":
+  "@babel/runtime@^7.1.5", "@babel/runtime@^7.10.2", "@babel/runtime@^7.10.3", "@babel/runtime@^7.5.1":
     version "7.10.5"
     resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.10.5.tgz#303d8bd440ecd5a491eae6117fd3367698674c5c"
     integrity sha512-otddXKhdNn7d0ptoFRHtMLa8LqDxLYwTjB4nYgM1yy5N6gU/MUf8zqyyLltCH3yAVitBzmwK4us+DD0l/MauAg==
@@ -1630,6 +1634,14 @@ Lockfile:
       "@types/minimatch" "*"
       "@types/node" "*"
   
+  "@types/hoist-non-react-statics@*":
+    version "3.3.1"
+    resolved "https://registry.yarnpkg.com/@types/hoist-non-react-statics/-/hoist-non-react-statics-3.3.1.tgz#1124aafe5118cb591977aeb1ceaaed1070eb039f"
+    integrity sha512-iMIqiko6ooLrTh1joXodJK5X9xeEALT1kM5G3ZLhD3hszxBdIEd5C75U834D9mLcINgD4OyZf5uQXjkuYydWvA==
+    dependencies:
+      "@types/react" "*"
+      hoist-non-react-statics "^3.3.0"
+  
   "@types/istanbul-lib-coverage@*", "@types/istanbul-lib-coverage@^2.0.0":
     version "2.0.1"
     resolved "https://registry.yarnpkg.com/@types/istanbul-lib-coverage/-/istanbul-lib-coverage-2.0.1.tgz#42995b446db9a48a11a07ec083499a860e9138ff"
@@ -1699,6 +1711,13 @@ Lockfile:
     dependencies:
       "@types/react" "*"
   
+  "@types/react-native@*":
+    version "0.63.2"
+    resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.63.2.tgz#428a4d71351ccbc31ab170b5f32477c7ce78dfd7"
+    integrity sha512-oxbp084lUsZvwfdWmWxKjJAuqEraQDRf+cE/JgwmrHQMguSrmgIHZ3xkeoQ5FYnW5NHIPpHudB3BbjL1Zn3vnA==
+    dependencies:
+      "@types/react" "*"
+  
   "@types/react@*", "@types/react@^16.9.0":
     version "16.9.43"
     resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.43.tgz#c287f23f6189666ee3bebc2eb8d0f84bcb6cdb6b"
@@ -1711,6 +1730,16 @@ Lockfile:
     version "1.0.1"
     resolved "https://registry.yarnpkg.com/@types/stack-utils/-/stack-utils-1.0.1.tgz#0a851d3bd96498fa25c33ab7278ed3bd65f06c3e"
     integrity sha512-l42BggppR6zLmpfU6fq9HEa2oGPEI8yrSPL3GITjfRInppYFahObbIQOQK3UGxEnyQpltZLaPe75046NOZQikw==
+  
+  "@types/styled-components@^5.1.1":
+    version "5.1.1"
+    resolved "https://registry.yarnpkg.com/@types/styled-components/-/styled-components-5.1.1.tgz#17c3b3a299aa38254189e04a72a8ee009a22e42d"
+    integrity sha512-fIjKvDU1LJExBZWEQilHqzfpOK4KUwBsj5zC79lxa94ekz8oDQSBNcayMACBImxIuevF+NbBGL9O/2CQ67Zhig==
+    dependencies:
+      "@types/hoist-non-react-statics" "*"
+      "@types/react" "*"
+      "@types/react-native" "*"
+      csstype "^2.2.0"
   
   "@types/testing-library__dom@*":
     version "7.5.0"
@@ -5150,7 +5179,7 @@ Lockfile:
       minimalistic-assert "^1.0.0"
       minimalistic-crypto-utils "^1.0.1"
   
-  hoist-non-react-statics@^3.0.0:
+  hoist-non-react-statics@^3.0.0, hoist-non-react-statics@^3.3.0:
     version "3.3.2"
     resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz#ece0acaf71d62c2969c2ec59feff42a4b1a85b45"
     integrity sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==
@@ -8836,6 +8865,14 @@ Lockfile:
     optionalDependencies:
       fsevents "2.1.2"
   
+  react-sticky-box@^0.9.3:
+    version "0.9.3"
+    resolved "https://registry.yarnpkg.com/react-sticky-box/-/react-sticky-box-0.9.3.tgz#8450d4cef8e4fdd7b0351520365bc98c97da11af"
+    integrity sha512-Y/qO7vTqAvXuRR6G6ZCW4fX2Bz0GZRwiiLTVeZN5CVz9wzs37ev0Xj3KSKF/PzF0jifwATivI4t24qXG8rSz4Q==
+    dependencies:
+      "@babel/runtime" "^7.1.5"
+      resize-observer-polyfill "^1.5.1"
+  
   react@^16.13.1:
     version "16.13.1"
     resolved "https://registry.yarnpkg.com/react/-/react-16.13.1.tgz#2e818822f1a9743122c063d6410d85c1e3afe48e"
@@ -9116,6 +9153,11 @@ Lockfile:
     version "1.0.0"
     resolved "https://registry.yarnpkg.com/requires-port/-/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
     integrity sha1-kl0mAdOaxIXgkc8NpcbmlNw9yv8=
+  
+  resize-observer-polyfill@^1.5.1:
+    version "1.5.1"
+    resolved "https://registry.yarnpkg.com/resize-observer-polyfill/-/resize-observer-polyfill-1.5.1.tgz#0e9020dd3d21024458d4ebd27e23e40269810464"
+    integrity sha512-LwZrotdHOo12nQuZlHEmtuXdqGoOD0OhaxopaNFxWzInpEgaLWoVuAMbTzixuosCx2nEG58ngzW3vxdWoxIgdg==
   
   resolve-cwd@^2.0.0:
     version "2.0.0"

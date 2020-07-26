@@ -8,4 +8,8 @@ function App() {
     <>
       <Layout/>
       <GlobalStyles/>
-   
+    </>
+  );
+}
+
+export default App;
