@@ -123,7 +123,7 @@ export const ProfileIcon = styled(Person)`${iconCss}`;
 
 
 export const Botside = styled.div`
-    margin-top:20px;
+    margin-bottom:10px;
 
     display:flex;
     align-items:center;
@@ -161,7 +161,16 @@ export const ExitIcon = styled(ExitToApp)`
     @media(min-width:1280px){
         display:inline-block;
         width:25px;
-        height:25px
+        height:25px;
+        color:var(--white);
+        margin-left:30px;
+        cursor:pointer;
+
+        &:hover{
+            path{
+                color:var(--like);
+            }
+        }
     }
 `;
 
