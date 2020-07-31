@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container,SearchWrapper,SearchInput,SearchIcon,Body } from './styles';
-
+import List from '../List';
 const SideBar: React.FC = () => {
   return (
       <Container>
@@ -10,7 +10,16 @@ const SideBar: React.FC = () => {
           </SearchWrapper>
 
           <Body>
-            <p>{"Lorem ipsum dolor sit amet.".repeat(90)}</p>
+            <List
+              title="Talvex você curta"
+              elements={[
+                <h1>Test</h1>,
+                <h1>Test</h1>,
+                <h1>Test</h1>
+
+              ]}
+            />
+
           </Body>
       </Container>
   );
